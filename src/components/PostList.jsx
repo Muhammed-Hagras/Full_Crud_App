@@ -1,3 +1,4 @@
+import { memo } from "react";
 import { Table } from "react-bootstrap";
 import PostListItem from "./PostListItem";
 
@@ -19,4 +20,4 @@ const PostList = ({ data, loading, error, deleteRecord }) => {
   );
 };
 
-export default PostList;
+export default memo(PostList);

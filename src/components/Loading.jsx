@@ -1,15 +1,38 @@
 import React from "react";
 
 export default function Loading({ loading, error, children }) {
-  return (
-    <div>
-      {loading ? (
-        <p colSpan={3}>loading please wait...</p>
+  const elementType = children?.type?.render?.displayName;
+  const renderHandler = () =>  {
+    if(elementType === "Button") {
+      const cloneElement = React.cloneElement(children,
+        {disabled: true},
+        "Loading");
+        return <>
+         {loading ? (
+        cloneElement
       ) : error ? (
-        <p colSpan={3}>{error}</p>
+        <>
+        {children}
+        <br/>
+        <p >{error}</p>
+        </>
       ) : (
         children
       )}
-    </div>
-  );
+        </>
+    }
+    return (
+      <div>
+        {loading ? (
+          <p colSpan={3}>loading please wait...</p>
+        ) : error ? (
+          <p colSpan={3}>{error}</p>
+        ) : (
+          children
+        )}
+      </div>
+    );
+  }
+  
+  return renderHandler()
 }
