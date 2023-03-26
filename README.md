@@ -34,9 +34,28 @@ Open [http://localhost:3004](http://localhost:3004) to view it in your browser.
 # Samples
 
 ## Home
+![home](https://user-images.githubusercontent.com/40708938/227807004-d8af9591-7d53-4846-893c-fbe8faa4c5b3.GIF)
+
+## View one post
+
+![view](https://user-images.githubusercontent.com/40708938/227807193-04bdc54f-c375-4a18-b755-e52473c77cf4.GIF)
 
 
-# View
-## Delete
 
 ## ADD
+![add](https://user-images.githubusercontent.com/40708938/227807019-366dfaa9-6fbe-4984-b109-387472930d25.GIF)
+
+## Edit
+
+![edit](https://user-images.githubusercontent.com/40708938/227807200-0e5f4b5b-027f-45c3-91cf-370133e63e21.GIF)
+
+
+## Delete
+
+![delete](https://user-images.githubusercontent.com/40708938/227807206-d0dbc68c-4cf9-4fff-a368-1f8170759e2c.GIF)
+
+## simple login
+
+![login](https://user-images.githubusercontent.com/40708938/227807237-c4d664ab-be75-4e65-8150-9dd4751e708d.GIF)
+
+
