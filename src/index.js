@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Provider } from "react-redux";
-import store from "./state";
+import store from "./store";
 
 import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -14,6 +14,14 @@ import ErrorPage from "./pages/ErrorPage";
 import EditPost from "./pages/EditPost";
 import AddPost from "./pages/AddPost";
 
+const postParamHandler =({params}) => {
+  if(isNaN(params.id)){
+    throw new Response("Bad Request", {
+      statusText: "Please Make sure to insert correct number id",
+      status: 400,
+    })
+  }
+}
 
 const router = createBrowserRouter([
   {
@@ -26,14 +34,7 @@ const router = createBrowserRouter([
       {path: "post/add", element: <AddPost/>},
       
       {path: "post/:id", element: <Details/>,
-      loader: ({params}) => {
-        if(isNaN(params.id)){
-          throw new Response("Bad Request", {
-            statusText: "Please Make sure to insert correct number id",
-            status: 400,
-          })
-        }
-      }
+      loader: postParamHandler
     },
       {path: "post/:id/edit", element: <EditPost/>},
     ]

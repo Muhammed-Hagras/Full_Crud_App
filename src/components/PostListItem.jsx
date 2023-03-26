@@ -1,8 +1,9 @@
 import React from 'react'
 import { Button, ButtonGroup } from "react-bootstrap";
-import { NavLink } from "react-router-dom"
+import { NavLink, useNavigate } from "react-router-dom"
 
 export default function PostListItem({data, deleteRecord}) {
+  const navigate = useNavigate();
     const deleteHandler =(id) => {
         var result = window.confirm("Are you sure to delete?");
         if(result){
@@ -19,7 +20,7 @@ export default function PostListItem({data, deleteRecord}) {
           </td>
           <td>
             <ButtonGroup aria-label="Basic example">
-              <Button variant="success">Edit</Button>
+              <Button variant="success" onClick={() => navigate(`post/${el.id}/edit`)}>Edit</Button>
               <Button variant="danger" onClick={() => deleteHandler(el.id)}>Delete</Button>
             </ButtonGroup>
           </td>

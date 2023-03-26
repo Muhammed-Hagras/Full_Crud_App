@@ -1,9 +1,18 @@
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
 import Table from "react-bootstrap/Table";
 import Loading from "../components/Loading";
 import usePostDetails from "../hooks/use-post-details";
 
 const Details = () => {
-  const { id ,loading, error, record } = usePostDetails();
+  const { id ,loading, error, recordInfo } = usePostDetails();
+  const dispatch = useDispatch() ;
+  useEffect(() => {
+    return () => {
+      dispatch({ type: "posts/cleanRecord" });
+    };
+  }, [dispatch]);
+
   return (
     <>
       <Loading loading={loading} error={error}>
@@ -18,8 +27,8 @@ const Details = () => {
         <tbody>
         <tr>
           <td>{id}</td>
-          <td>{record?.title}</td>
-          <td>{record?.description}</td>
+          <td>{recordInfo?.title}</td>
+          <td>{recordInfo?.description}</td>
         </tr>
         </tbody>
       </Table>

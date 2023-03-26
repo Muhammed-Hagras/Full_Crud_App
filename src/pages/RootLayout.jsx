@@ -5,7 +5,7 @@ import Header from "../components/Header";
 
 const RootLayout = () => {
   return (
-    <Container>
+    <Container >
       <Header />
       <Row>
         <Col xs={{ span: 8, offset: 2 }}>

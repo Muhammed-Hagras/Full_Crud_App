@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Button, Form } from 'react-bootstrap';
 import { useDispatch , useSelector} from 'react-redux';
-import { insertPosts } from '../state/postSlice';
+import { insertPosts } from '../store/postSlice';
 import { useNavigate } from "react-router-dom"
 import Loading from "../components/Loading"
 
@@ -9,7 +9,7 @@ export default function AddPost() {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
 
-  const { records, loading, error } = useSelector((state) => state.posts);
+  const { loading, error } = useSelector((state) => state.posts);
   const dispatch = useDispatch()
   const navigate = useNavigate();
   const formHandler = (e) => {
