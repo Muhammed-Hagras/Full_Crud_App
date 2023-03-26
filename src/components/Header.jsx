@@ -10,7 +10,7 @@ const Header = () => {
 
   return (
     <div className="header">
-      <h1>CRUD APP</h1>
+      <h1>Posts CRUD APP</h1>
       <ul className="nav">
         <li>
           <NavLink to="/" end>

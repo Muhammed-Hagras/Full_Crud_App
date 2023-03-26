@@ -37,3 +37,7 @@
   font-size: 16px;
   margin-left: auto;
 }
+
+.myView{
+  height: 100vh;
+}
