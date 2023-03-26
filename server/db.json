@@ -1,0 +1,102 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "learn js",
+      "description": "learn js from scratch",
+      "price": "10"
+    },
+    {
+      "id": 2,
+      "title": "learn React",
+      "description": "learn React from scratch",
+      "price": "15"
+    },
+    {
+      "title": "Angular",
+      "price": "33",
+      "description": "learn Angular from scratch",
+      "id": 6
+    },
+    {
+      "title": "New post edited",
+      "description": "New post edited by Muhammed Hagras",
+      "id": 10
+    },
+    {
+      "id": 29,
+      "title": "sda",
+      "description": "sda",
+      "userId": 1
+    },
+    {
+      "id": 427,
+      "title": "fsa",
+      "description": "gg",
+      "userId": 1
+    },
+    {
+      "id": 69,
+      "title": "dgsda",
+      "description": "d",
+      "userId": 1
+    },
+    {
+      "id": 430,
+      "title": "fdjutju",
+      "description": "iiiiiunb c;5tb;p4w3",
+      "userId": 1
+    },
+    {
+      "id": 72,
+      "title": "new Post edited",
+      "description": "new Post Description bla bla edited",
+      "userId": 1
+    }
+  ],
+  "books": [
+    {
+      "id": 1,
+      "title": "learn js",
+      "description": "learn js from scratch",
+      "price": "10"
+    },
+    {
+      "id": 2,
+      "title": "learn React",
+      "description": "learn React from scratch",
+      "price": "15"
+    },
+    {
+      "title": "Angular",
+      "price": "33",
+      "description": "learn Angular from scratch",
+      "id": 6
+    },
+    {
+      "title": "fsd",
+      "price": "14",
+      "description": "gdsf",
+      "userName": "Mhmd Hagras",
+      "id": 8
+    },
+    {
+      "title": "gds",
+      "price": "44",
+      "description": "gsdhyjyjyjyjyjyjyjyjyjyjt",
+      "userName": "Mhmd Hagras",
+      "id": 9
+    },
+    {
+      "title": "New post",
+      "description": "New post added y Muhammed Hagras",
+      "id": 10
+    },
+    {
+      "id": 495,
+      "title": "titlte with user",
+      "description": "post description  with user",
+      "userId": 1
+    }
+  ]
+}
