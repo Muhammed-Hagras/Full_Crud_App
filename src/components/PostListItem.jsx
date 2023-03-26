@@ -2,7 +2,7 @@ import React from 'react'
 import { Button, ButtonGroup } from "react-bootstrap";
 import { NavLink, useNavigate } from "react-router-dom"
 
-export default function PostListItem({data, deleteRecord}) {
+export default function PostListItem({data, deleteRecord, isLoggedIn}) {
   const navigate = useNavigate();
     const deleteHandler =(id) => {
         var result = window.confirm("Are you sure to delete?");
@@ -21,7 +21,7 @@ export default function PostListItem({data, deleteRecord}) {
           <td>
             <ButtonGroup aria-label="Basic example">
               <Button variant="success" onClick={() => navigate(`post/${el.id}/edit`)}>Edit</Button>
-              <Button variant="danger" onClick={() => deleteHandler(el.id)}>Delete</Button>
+              <Button variant="danger" onClick={() => deleteHandler(el.id)}  disabled={!isLoggedIn}>Delete</Button>
             </ButtonGroup>
           </td>
         </tr>

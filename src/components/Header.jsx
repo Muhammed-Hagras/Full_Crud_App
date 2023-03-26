@@ -1,6 +1,13 @@
+import { useDispatch } from "react-redux";
 import { NavLink } from "react-router-dom";
+import { logInOut } from "../store/authSlice";
 
 const Header = () => {
+  const dispatch = useDispatch()
+  // const logInHandler = () => {
+  //   logInOut());
+  // }
+
   return (
     <div className="header">
       <h1>CRUD APP</h1>
@@ -13,7 +20,7 @@ const Header = () => {
         <li>
           <NavLink to="post/add">Add Post</NavLink>
         </li>
-        <li className="login">login</li>
+        <li className="btn btn-warning login" onClick={() => dispatch(logInOut())}>login</li>
       </ul>
     </div>
   );
