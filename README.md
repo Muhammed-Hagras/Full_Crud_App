@@ -13,7 +13,6 @@ which contains some features such as:
   * React-bootstrap.
   * Formik.
   * Yub Validation.
-
   
 
 In the project directory, you can run:
