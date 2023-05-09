@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "json-server --w db.json --port 3004"
+    "start": "json-server --w db.json --port 3004",
+     "build": "json-server --w db.json --port 3004"
   },
   "author": "",
   "license": "ISC",
