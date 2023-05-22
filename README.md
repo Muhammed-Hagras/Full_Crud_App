@@ -7,10 +7,15 @@ which contains some features such as:
   * update.
   * delete.
 
+
 * Tools: 
   * React.js.
-  * shortid.
-  * stripe.
+  * Redux-toolkit.
+  * React-router-dom
+  * React-bootstrap.
+  * Formik.
+  * Yub Validation.
+
   
 
 In the project directory, you can run:
