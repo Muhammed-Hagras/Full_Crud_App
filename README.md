@@ -9,11 +9,8 @@ which contains some features such as:
 
 * Tools: 
   * React.js.
-  * Redux-toolkit.
-  * React-router-dom
-  * React-bootstrap.
-  * Formik.
-  * Yub Validation.
+  * shortid.
+  * stripe.
   
 
 In the project directory, you can run:
